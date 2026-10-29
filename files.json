@@ -4,8 +4,9 @@
     "id": "guidelines",
     "folderPath": "guidelines",
     "files": [
-      "Combat Training Guide.html",
-      "Titan manual attack mode guide.html"
+      "warflag.html",
+      "Titan manual attack mode guide.html",
+      "Combat Training Guide.html"
     ],
     "sortBy": "name",
     "sortOrder": "asc"
@@ -15,16 +16,16 @@
     "id": "waReportsList",
     "folderPath": "weekly reports",
     "files": [
-      "raid_boss_20261005_7days.html",
-      "activity_20261005_7days.html",
-      "activity_20261019_7days.html",
-      "raid_boss_20260928_7days.html",
       "activity_20260928_7days.html",
-      "activity_20260921_7days.html",
-      "raid_boss_20261019_7days.html",
-      "activity_20261012_7days.html",
+      "activity_20261005_7days.html",
       "raid_boss_20260921_7days.html",
-      "raid_boss_20261012_7days.html"
+      "raid_boss_20261012_7days.html",
+      "activity_20261019_7days.html",
+      "activity_20260921_7days.html",
+      "raid_boss_20261005_7days.html",
+      "raid_boss_20260928_7days.html",
+      "raid_boss_20261019_7days.html",
+      "activity_20261012_7days.html"
     ],
     "sortBy": "date",
     "sortOrder": "desc"
