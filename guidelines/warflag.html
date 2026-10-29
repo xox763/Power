@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Wars - War Flags Guide</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --gold: #fbbf24;
+            --success: #2ecc71;
+            --danger: #e74c3c;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 30px 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent);
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            font-style: italic;
+            color: var(--text-muted);
+            border-left: 4px solid var(--accent);
+        }
+
+        .flag-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid var(--accent);
+        }
+
+        .flag-card.popular { border-left-color: var(--success); }
+        .flag-card.unpopular { border-left-color: var(--danger); }
+        .flag-card.defense { border-left-color: #9b59b6; }
+        .flag-card.attack { border-left-color: #e67e22; }
+        .flag-card.long-battle { border-left-color: var(--gold); }
+
+        .flag-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        .flag-desc {
+            color: var(--text-main);
+            margin: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag.all-around { background-color: var(--success); }
+        .tag.defense { background-color: #9b59b6; }
+        .tag.attack { background-color: #e67e22; }
+        .tag.long-battle { background-color: #34495e; }
+        .tag.unpopular { background-color: var(--danger); }
+
+        strong {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hero Wars: War Flags Guide</h1>
+            <p class="subtitle">Comprehensive overview and evaluation of each War Flag</p>
+        </header>
+        
+        <div class="intro">
+            "Based on my experience, here is a general breakdown and evaluation of each War Flag..."
+        </div>
+
+        <div class="flag-card popular">
+            <div class="flag-name">
+                Pet Strength <span class="tag all-around">All-Around</span>
+            </div>
+            <p class="flag-desc">A solid, all-around flag that works with almost any team composition. It's usually the go-to safe choice whenever you're unsure what to pick.</p>
+        </div>
+
+        <div class="flag-card unpopular">
+            <div class="flag-name">
+                Fervor <span class="tag unpopular">Low Popularity</span>
+            </div>
+            <p class="flag-desc">Not very popular. It's useful when your tank needs to cast their Ultimate faster. It might be worth considering in mirror matchups, though it still requires testing and validation to see if you actually gain a timing advantage.</p>
+        </div>
+
+        <div class="flag-card defense">
+            <div class="flag-name">
+                Recovery <span class="tag defense">Defensive</span>
+            </div>
+            <p class="flag-desc">A defensive flag best used in teams built around strong healers, such as <strong>Guus</strong>, <strong>Martha</strong>, <strong>Thea</strong>, and <strong>Celeste</strong>.</p>
+        </div>
+
+        <div class="flag-card attack">
+            <div class="flag-name">
+                Swift Warriors <span class="tag attack">Offensive</span>
+            </div>
+            <p class="flag-desc">An offensive flag specifically tailored for Warrior-meta teams. It has limited use cases, mainly with heroes like <strong>Ishmael</strong>, <strong>Arachne</strong>, <strong>Lyria</strong>, or <strong>Qing Mao</strong>.</p>
+        </div>
+
+        <div class="flag-card long-battle">
+            <div class="flag-name">
+                Frost <span class="tag long-battle">Long Battle / Counter Control</span>
+            </div>
+            <p class="flag-desc">Designed for long, drawn-out battles. Shines especially well against control-heavy teams. (Note: A skill level dropped by 2 reduces its success rate to <strong>66%</strong>).</p>
+        </div>
+
+        <div class="flag-card">
+            <div class="flag-name">
+                Readiness <span class="tag">Backline Focus</span>
+            </div>
+            <p class="flag-desc">Helps you gain an advantage by speeding up the Ultimate timing of your backline hero. Depending on who is in your backline, it can be played either offensively or defensively. Works great with <strong>Aidan</strong> or <strong>Lara Croft</strong>.</p>
+        </div>
+
+        <div class="flag-card long-battle">
+            <div class="flag-name">
+                Vanguard <span class="tag long-battle">Long Battle / Frontline</span>
+            </div>
+            <p class="flag-desc">Built for long battles. Great if you want to extend the fight by boosting the survivability of your frontline heroes, such as <strong>Electra</strong>, <strong>Galahad</strong>, <strong>Julius</strong>, etc.</p>
+        </div>
+
+        <div class="flag-card defense">
+            <div class="flag-name">
+                Bastion <span class="tag defense">Defensive / Physical Armor</span>
+            </div>
+            <p class="flag-desc">A defensive flag. Works very well when paired with a sturdy tank (maybe except for <strong>Electra</strong>?) when facing physical damage burst teams.</p>
+        </div>
+
+        <div class="flag-card unpopular">
+            <div class="flag-name">
+                Decline <span class="tag unpopular">Low Popularity</span>
+            </div>
+            <p class="flag-desc">Not very popular overall.</p>
+        </div>
+
+        <div class="flag-card">
+            <div class="flag-name">
+                Steel Storm <span class="tag">Multi-Target</span>
+            </div>
+            <p class="flag-desc">Highly effective when paired with multi-target damage dealers like <strong>Dante</strong>, <strong>Keira</strong>, <strong>Isaac</strong>, or <strong>Lara Croft</strong>. Also, keep in mind that all tanks inherently hit multiple targets on the same line.</p>
+        </div>
+
+        <div class="flag-card long-battle">
+            <div class="flag-name">
+                False Immortality <span class="tag long-battle">Long Battle / Dorian Alt</span>
+            </div>
+            <p class="flag-desc">Designed for long battles—essentially acts as a War Flag alternative to <strong>Dorian</strong>. While Dorian has a limited aura range with uncapped healing, this flag provides a team-wide aura with capped healing, making it great for teams with sustained damage dealing.</p>
+        </div>
+
+        <footer>
+            Hero Wars War Flags Reference Guide • Designed with consistent UI theme
+        </footer>
+    </div>
+
+</body>
+</html>
