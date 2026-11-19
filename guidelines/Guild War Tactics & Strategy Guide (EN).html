@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guild War Tactics & Strategy Guide</title>
+<style>
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#1b2030; --muted:#5b6478;
+  --line:#d9dde6; --accent:#2c4a8f; --accent-soft:#e6ecf8; --warn:#8a5a00; --warn-soft:#fbf1da;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12151d; --surface:#1b202c; --ink:#e8ebf2; --muted:#9aa3b8;
+    --line:#2d3446; --accent:#8fb0ff; --accent-soft:#222c46; --warn:#f0c46a; --warn-soft:#332a14;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12151d; --surface:#1b202c; --ink:#e8ebf2; --muted:#9aa3b8;
+  --line:#2d3446; --accent:#8fb0ff; --accent-soft:#222c46; --warn:#f0c46a; --warn-soft:#332a14;
+  color-scheme:dark;
+}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.7;font-size:16px;
+}
+main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:1.9rem;line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
+.lead{color:var(--muted);margin:0 0 32px}
+h2{font-size:1.3rem;margin:48px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--accent)}
+h3{font-size:1.05rem;margin:0 0 4px;color:var(--accent)}
+p{margin:8px 0}
+ul{margin:8px 0;padding-left:1.3em}
+li{margin:5px 0}
+li>ul{margin:4px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:16px 0}
+.card .when{margin:0 0 10px;font-weight:600}
+.pattern{border-left:4px solid var(--accent)}
+.tag{display:inline-block;font-size:.8rem;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:1px 9px;margin-bottom:6px}
+.note{background:var(--warn-soft);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:8px;padding:12px 16px;margin:16px 0}
+.members{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+.members li{background:var(--accent-soft);color:var(--ink);border-radius:999px;padding:3px 14px;margin:0;font-weight:600;font-size:.95rem}
+nav{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 20px;margin-bottom:8px}
+nav ul{margin:0;padding-left:1.2em}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Guild War Tactics &amp; Strategy Guide</h1>
+  <p class="lead">What we need to build as our guidelines</p>
+
+  <nav aria-label="Contents">
+    <ul>
+      <li><a href="#data">Data-driven, opponent-specific tactics</a></li>
+      <li><a href="#patterns">Standard attack patterns</a></li>
+      <li><a href="#bridge">Dedicated Bridge breakthrough team</a></li>
+      <li><a href="#tool">Tactical command sharing tool</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="data">Data-driven, opponent-specific tactics</h2>
+  <ul>
+    <li>Use accumulated data to build an attack plan tailored to each opposing guild.
+      <ul>
+        <li>Attack route, targets, and specific matchups</li>
+      </ul>
+    </li>
+    <li>Once the attack plan is set, watch for changes in the opponent’s defensive setup right at the start of the war. If anything has changed, work out the adjusted tactics immediately and pass them on to the team.</li>
+  </ul>
+
+  <h2 id="patterns">Standard attack patterns</h2>
+
+  <section class="card pattern">
+    <span class="tag">Pattern 1</span>
+    <p class="when">When breaking through the Bridge looks too difficult <span style="font-weight:400;color:var(--muted)">(rare at the moment)</span></p>
+    <ul>
+      <li>Capture Mage Academy, Barracks, Lighthouse, and Bridge first.</li>
+      <li>Once all of those are captured, check whether any additional fort can be taken. If so, go after it.</li>
+      <li>If not, each member takes responsibility for one of the weaker teams among the available targets and attacks it.</li>
+      <li>If an attack fails, don’t keep attacking the same target to force a win. Move on to a target that hasn’t been attacked yet and collect as many points as possible.</li>
+    </ul>
+  </section>
+
+  <section class="card pattern">
+    <span class="tag">Pattern 2</span>
+    <p class="when">When the Bridge can be broken but clearing every gate to the Citadel looks too difficult, or taking the Citadel isn’t efficient</p>
+    <ul>
+      <li>After breaking the Bridge, make a list of which forts other than the Citadel can be captured.</li>
+      <li>Capturing as many forts as possible leads to the highest point total.</li>
+      <li>It’s best to set capture priorities and share them with the attackers.</li>
+      <li>Until the late phase of the war, there’s no need to enforce priorities. Simply tell attackers to pick a suitable opponent from the target list.</li>
+      <li>Once the late phase begins, guide attackers to follow the target priorities. (Assign attackers to specific targets.)</li>
+    </ul>
+  </section>
+
+  <section class="card pattern">
+    <span class="tag">Pattern 3</span>
+    <p class="when">When capturing the Citadel is possible or worth attempting</p>
+    <ul>
+      <li>Decide the shortest route to the Citadel and share it with the attackers.</li>
+      <li>GW sequence: Bridge → pick one of the three gates → assign Citadel attackers</li>
+      <li>Until the Citadel is captured, keep attackers from hitting targets off the shortest route.</li>
+      <li>If an attacker has a timing issue or another exceptional situation comes up, it can help to reroute that attacker to SoE or Foundry and assign a target there.</li>
+      <li>Once the Citadel is captured, set capture priorities for the remaining forts and share them with the attackers.</li>
+    </ul>
+  </section>
+
+  <h2 id="bridge">Dedicated Bridge breakthrough team</h2>
+  <ul>
+    <li>Team of 3–4 members.</li>
+    <li>Goal: break through the Bridge within 1 hour of the war starting.</li>
+    <li>Bridge defense teams are mostly Earth+Light or Dark+Light.</li>
+    <li>Prefer members with a strong Fire Team and members who can be online early in the war.</li>
+    <li>If attacks remain after the Bridge is broken, use them on the next Gate.</li>
+    <li>Even with a dedicated team, don’t rely on it alone for the Bridge. Anyone who is online and has what it takes to win the fight should be encouraged to attack the Bridge at any time.</li>
+  </ul>
+
+  <div class="card">
+    <h3>Members under consideration</h3>
+    <ul class="members">
+      <li>Synapse</li><li>Teamster</li><li>BZH</li><li>Megor</li><li>lzytch</li><li>Ihg</li>
+    </ul>
+  </div>
+  <div class="note">We also need <strong>one more member with lower attack power who can be online early in the war</strong>.</div>
+
+  <h2 id="tool">Tactical command sharing tool</h2>
+  <ul>
+    <li>We’re building a standalone support tool with a GW battle report feature.</li>
+    <li>The plan is to add a command notes feature to it so tactical orders can be shared with everyone.</li>
+    <li>It’s published as a GitHub web page, so it is not an in-game overlay.</li>
+  </ul>
+</main>
+</body>
+</html>
