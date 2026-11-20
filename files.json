@@ -4,8 +4,8 @@
     "id": "guidelines",
     "folderPath": "guidelines",
     "files": [
-      "War Flags Guide.html",
       "Titan manual attack mode guide.html",
+      "War Flags Guide.html",
       "Guild War Tactics & Strategy Guide V3 (EN).html",
       "Combat Training Guide.html"
     ],
@@ -17,22 +17,22 @@
     "id": "waReportsList",
     "folderPath": "weekly reports",
     "files": [
-      "activity_20260928_7days.html",
-      "raid_boss_20261012_7days.html",
-      "raid_boss_20260928_7days.html",
-      "raid_boss_20261019_7days.html",
-      "activity_20261012_7days.html",
-      "activity_20261026_7days.html",
-      "raid_boss_20261026_7days.html",
       "raid_boss_20261102_7days.html",
-      "raid_boss_20261005_7days.html",
-      "activity_20260921_7days.html",
-      "raid_boss_20261109_7days.html",
-      "activity_20261102_7days.html",
+      "activity_20261026_7days.html",
+      "raid_boss_20261012_7days.html",
       "raid_boss_20260921_7days.html",
-      "activity_20261005_7days.html",
+      "activity_20261102_7days.html",
+      "activity_20261012_7days.html",
       "activity_20261109_7days.html",
-      "activity_20261019_7days.html"
+      "raid_boss_20261019_7days.html",
+      "activity_20261005_7days.html",
+      "activity_20261019_7days.html",
+      "raid_boss_20261005_7days.html",
+      "raid_boss_20261026_7days.html",
+      "raid_boss_20261109_7days.html",
+      "activity_20260921_7days.html",
+      "raid_boss_20260928_7days.html",
+      "activity_20260928_7days.html"
     ],
     "sortBy": "date",
     "sortOrder": "desc"
@@ -49,7 +49,9 @@
     "title": "Territory of Titans Activity Reports",
     "id": "totReportsList",
     "folderPath": "tot reports",
-    "files": [],
+    "files": [
+      "activity_20261116_4days.html"
+    ],
     "sortBy": "date",
     "sortOrder": "desc"
   }
